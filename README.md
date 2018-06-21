@@ -26,11 +26,14 @@ Software reference:
 **1.The official drive of Bosch**  
 **2.The BME680 drive of Adafruit**
 
+***
 
 NOTICE!!!
 ======  
-This release version doesn't support gas measurement well,The result value of gas measurement is biased.If you want get a accurate measurement of gas,please refer to [Seeed_BME680_V1](https://github.com/Seeed-Studio/Seeed_BME680_V1),but this release version only supports several large memory arduino platform like ATMEGA2560,Manufacturers are developing...
+This release version doesn't support gas measurement well,The result value of gas measurement is biased.If you want get a accurate measurement of gas,please refer to [Seeed_BME680_V1](https://github.com/Seeed-Studio/Seeed_BME680_V1),***but this release version only supports several large memory arduino platform like ATMEGA2560,Manufacturers are developing...***  
 
+
+***
 statement:
 ==========
 This software is written by downey for seeed studio and is licensed under The MIT License. Check License.txt for more information.
