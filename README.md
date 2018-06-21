@@ -29,7 +29,7 @@ Software reference:
 
 NOTICE!!!
 ======  
-This release version doesn't support gas measurement well,The result value of gas measurement is biased.If you want get a accurate measurement of gas,please refer to,but this release version only supports several large memory arduino platform like ATMEGA2560,Manufacturers are developing...
+This release version doesn't support gas measurement well,The result value of gas measurement is biased.If you want get a accurate measurement of gas,please refer to [Seeed_BME680_V1](https://github.com/Seeed-Studio/Seeed_BME680_V1),but this release version only supports several large memory arduino platform like ATMEGA2560,Manufacturers are developing...
 
 statement:
 ==========
