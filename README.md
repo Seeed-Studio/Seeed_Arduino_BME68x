@@ -1,6 +1,7 @@
 BME680:
 ===========
-![BME680](https://github.com/linux-downey/picture_repository/blob/master/BME680.png)
+![BME680](https://github.com/linux-downey/picture_repository/blob/master/BME680.png)  
+
 BME680 is an integrated environmental sensor developed specifically for mobile applications and wearables where size and low power consumption are key requirements.It also supports four kinds of numerical measurements of temperature, humidity, gas and air pressure.  
 
 Usage:
