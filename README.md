@@ -1,4 +1,4 @@
-BME680:
+BME680:  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_BME680.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_BME680)
 ===========
 ![BME680](https://github.com/linux-downey/picture_repository/blob/master/BME680.png)  
 
