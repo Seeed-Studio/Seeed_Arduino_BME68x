@@ -131,13 +131,14 @@ int8_t Seeed_BME680::read_sensor_data(void) {
     settings_sel = BME680_OST_SEL | BME680_OSH_SEL | BME680_OSP_SEL | BME680_FILTER_SEL | BME680_GAS_SENSOR_SEL;
 
     /*Set sensor's registers*/
-    if (ret = bme680_set_sensor_settings(settings_sel, &sensor_param)) {
+    if ((ret = bme680_set_sensor_settings(settings_sel, &sensor_param))) {
         Serial.print("bme680_set_sensor_settings() ==>ret value = ");
         Serial.println(ret);
         return -1;
     }
+    
     /*Set sensor's mode ,activate sensor*/
-    if (ret = bme680_set_sensor_mode(&sensor_param)) {
+    if ((ret = bme680_set_sensor_mode(&sensor_param))) {
         Serial.print("bme680_set_sensor_mode() ==>ret value = ");
         Serial.println(ret);
         return -2;
@@ -149,7 +150,7 @@ int8_t Seeed_BME680::read_sensor_data(void) {
     delay(meas_period);   /**<It is necessary to delay for a duration time */
 
     /*Get sensor's result value from registers*/
-    if (ret = bme680_get_sensor_data(&data, &sensor_param)) {
+    if ((ret = bme680_get_sensor_data(&data, &sensor_param))) {
         Serial.print("bme680_get_sensor_data() ==>ret value = ");
         Serial.println(ret);
         return -3;
@@ -338,7 +339,7 @@ bool Seeed_BME680::init() {
 
     int8_t ret = BME680_OK;
     /*Check the wiring,Check whether the protocol stack is normal and Read the calibrated value from sensor */
-    if (ret = bme680_init(&sensor_param)) {
+    if ((ret = bme680_init(&sensor_param))) {
         // Serial.print("bme680_init() ==>ret value = ");
         // Serial.println(ret);
         return false;
